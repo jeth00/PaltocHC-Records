@@ -1,0 +1,47 @@
+<!--topnavbar-->
+<div class="topnav shadow p-1">
+  <a>Paltoc Healthcare Admin</a>
+  <span class="menu" (click)="openNav(true)"><i class="bi bi-list"></i></span>
+
+</div>
+<!--topnavbar-->
+
+<!--left sidebar-->
+
+<div class="sidebar p-2" id="sidebar" [ngStyle]="responsiveMenu">
+  <ul>
+    <li><a routerLink="dashboard" routerLinkActive="active"><i class="bi bi-columns"></i>Dashboard</a></li>
+    <li>
+      <a href="#"><i class="bi bi-file-earmark-person"></i>Patient Records<i class="bi bi-arrow-down-short"></i></a>
+        <ul class="dropdown-container">
+          <li><a routerLink="adult" routerLinkActive="active"><i class="bi bi-1-square"></i>Adult</a></li>
+          <li><a routerLink="postpartum" routerLinkActive="active"><i class="bi bi-2-square"></i>Postpartum</a></li>
+          <li><a routerLink="maternal" routerLinkActive="active"><i class="bi bi-3-square"></i>Maternal</a></li>
+          <li><a routerLink="ncd-risk" routerLinkActive="active"><i class="bi bi-4-square"></i>NCD Risk</a></li>
+          <li><a routerLink="ten-above" routerLinkActive="active"><i class="bi bi-5-square"></i>10-19 Years Old</a></li>
+          <li><a routerLink="eleven-months" routerLinkActive="active"><i class="bi bi-6-square"></i>0-11 months</a></li>
+          <li><a routerLink="pediatrics" routerLinkActive="active"><i class="bi bi-7-square"></i>Pediatrics</a></li>
+        </ul>
+
+    </li>
+    <li><a routerLink="sidebar1" routerLinkActive="active"><i class="bi bi-layout-sidebar"></i>Sidebar1</a></li>
+    <li><a routerLink="sidebar2" routerLinkActive="active"><i class="bi bi-layout-sidebar"></i>Sidebar2</a></li>
+    <li><a routerLink="sidebar3" routerLinkActive="active"><i class="bi bi-layout-sidebar"></i>Sidebar3</a></li>
+    <li><a routerLink="user" routerLinkActive="active"><i class="bi bi-person"></i>User</a></li>
+  </ul>
+
+</div>
+
+
+<!--main content-->
+
+<div class="main-content">
+  
+  <router-outlet></router-outlet>
+
+</div>
+
+
+
+
+<!--main content-->
